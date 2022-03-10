@@ -150,3 +150,25 @@ background-color: #333;
 border-radius: 5px;
 cursor: pointer;
 }
+@media only screen and (max-width:550px) {
+    .header-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-footer{
+        flex-flow: column wrap;
+    }
+    .ul-flex{
+        flex-flow: column wrap;
+    }
+    .header-flex{
+        flex-flow: column wrap;
+    }
+    .header-logo{
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding-bottom: .5rem;
+        margin-bottom: .5rem;
+    }
+    
+}
