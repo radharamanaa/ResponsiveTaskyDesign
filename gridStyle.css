@@ -27,7 +27,7 @@ article{
 article *{
     margin:auto 1rem;
 }
-div.category{
+section.category{
     width: auto;
     justify-content: left;
     font-weight: bold;
@@ -39,7 +39,7 @@ div.category{
     justify-self: left;
     
 }
-div.category:hover{
+section.category:hover{
     transform: scale(105%);
 }
 

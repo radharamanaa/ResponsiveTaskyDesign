@@ -2,13 +2,15 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     margin: 0;
+    list-style-type: none;
 }
 .container{
+    width: 80%;
     margin:0 auto;
-    background-color: #f1f1f1;
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 article{
@@ -35,11 +37,11 @@ div.category{
     color:white;
     font-size: .75rem;
     justify-self: left;
-    
 }
 div.category:hover{
-    transform: scale(105%);
+    transform:scale(1.1);
 }
+
 
 h3{
     font-weight: bold;
@@ -60,4 +62,91 @@ p.date{
     font-weight: 700;
     color: rgb(40,40,150);
 }
+.whole-container{
+    margin:0 auto;
+    display: grid;
+    grid-template-areas: 'header header'
+    'section section'
+    'section section'
+    'footer footer';
+}
+header h1{
+    font-size: 3rem;
+    color:white;
+    background-color: #222;
+    padding:2.5rem 1rem;
+    font-weight: lighter;
+}
 
+section{
+    grid-area: section;
+    min-height: 80vh;
+    background-color: #555;
+}
+footer{
+    grid-area: footer;
+}
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.flex{
+    display: flex;
+}
+.ul-flex{
+    color:#eee;
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.header-flex{
+ justify-content: space-between;
+ background-color: #222;
+ margin:0 auto;
+ width: 80%;
+}
+.header-container{
+    grid-area: header;
+    background-color: #222;
+}
+.flex-footer{
+    bottom:0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.header-logo{
+    margin-left: 2rem;
+    align-items: center;
+    color:white;
+    cursor: pointer;
+}
+.fa-solid{
+    font-size: 2rem;
+}
+h1.p2{
+    padding-left:0;
+}
+.footer-container{
+    background-color: black;
+    width: 100%;
+}
+.desc{
+    max-height:150px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.date{
+    padding-top: 1rem;
+}
+header ul li:hover{
+background-color: #333;
+border-radius: 5px;
+cursor: pointer;
+}
